@@ -7,9 +7,9 @@ The data comes as a zip download, you can extract using the following bash comma
 ```bash
 find . -name "*.zip" | xargs -P 5 -I fileName sh -c 'unzip -o -d "$(dirname "fileName")/$(basename -s .zip "fileName")" "fileName"'
 ```
-```
+
 Note: You may replace -P 5 with how many ever processes you are comfortable running on your own system.
-```
+
 
 The above command will unzip the archives into folders matching the archive name. Just remember to put all the downloaded zips in one location. 
 
