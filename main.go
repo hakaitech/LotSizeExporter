@@ -12,8 +12,8 @@ import (
 )
 
 func main() {
-	input_path := "/ssd/LotSize_2018"
-	output_path := "/ssd/Lotsize2018.csv"
+	input_path := "/Data_source_dir"
+	output_path := "Lotsize2018.csv"
 	f, err := os.Create(output_path)
 	if err != nil {
 		log.Fatal(err)
